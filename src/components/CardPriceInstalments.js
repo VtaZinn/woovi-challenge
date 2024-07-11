@@ -25,7 +25,7 @@ function CardPriceInstalments(props) {
 
   return(
       <>
-      {item.id===2 && <Chip label="Pix Parcelado" sx={{width: 120, height: 25, position: 'absolute', marginTop: '-15px', marginLeft: 2, backgroundColor: '#E5E5E5', fontWeight: 'bolder', fontSize: 15}}/>}
+      {item.id==='2' && <Chip label="Pix Parcelado" sx={{width: 120, height: 25, position: 'absolute', marginTop: '-15px', marginLeft: 2, backgroundColor: '#E5E5E5', fontWeight: 'bolder', fontSize: 15}}/>}
       <Card sx={border} onClick={handleClick}>
         <CardActionArea>
           <CardContent>
