@@ -12,8 +12,8 @@ import { useState } from 'react';
 function CardPrice(props) {
   const [open, setOpen] = useState(false);
 
-  const border = '1' == props.selected ? {border: '2px solid #03D69D'} : {border: '1.3px solid #E5E5E5'};
-  const radius = '1' == props.selected ? Correct : Radius;
+  const border = '1' === props.selected ? {border: '2px solid #03D69D'} : {border: '1.3px solid #E5E5E5'};
+  const radius = '1' === props.selected ? Correct : Radius;
 
   function handleClick() {
     props.onClick();

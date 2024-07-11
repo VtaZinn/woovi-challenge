@@ -8,7 +8,7 @@ function Loading(props){
   const [progress, setProgress] = React.useState(10);
 
   React.useEffect(() => {
-    if(props.isOpen == true){
+    if(props.isOpen === true){
       const timer = setInterval(() => {
         setProgress((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 10));
       }, 200);
@@ -18,7 +18,7 @@ function Loading(props){
     }
   }, [props.isOpen]);
 
-  if(progress == 100){
+  if(progress === 100){
     window.location.assign(props.nextWindow);
   }
 

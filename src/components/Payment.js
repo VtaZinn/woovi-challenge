@@ -19,7 +19,7 @@ function Payment() {
           <Typography sx={{fontWeight: 'bolder', color: '#4D4D4D'}}>R$ 15.300,00</Typography>
       </Box>
       <Box sx={{width: '100%', marginLeft: '13px', marginTop: '-5px', zIndex: '0'}}>
-          <img src={VerticalLine}/>
+          <img src={VerticalLine} alt="divider"/>
       </Box>
       
       <Box sx={{display: 'flex', width: '100%', justifyContent: 'space-between', marginTop: '-9px'}}>
