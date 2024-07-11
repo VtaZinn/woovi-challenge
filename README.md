@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Challenge Woovi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi desenvolvido em React.js e inclui várias funcionalidades, como cartões que ficam em destaque quando selecionados, um modal com um loading que redireciona para a próxima página, data e hora atualizadas em tempo real, uma tela de pagamento com opções de parcelamento, uma tela com QR code e um formulário de pagamento.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+### 1. Cartões Destacáveis
+- Cartões que, quando selecionados, ficam em destaque com a cor verde.
+- Ideal para interfaces interativas onde o usuário precisa selecionar opções ou itens.
 
-### `npm start`
+### 2. Modal com Loading
+- Modal que exibe um loading antes de redirecionar para a próxima página.
+- Útil para operações que requerem tempo de processamento antes de navegar.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. Data e Hora em Tempo Real
+- Exibição de data e hora atualizadas em tempo real.
+- Essencial para aplicações que requerem a visualização do horário atual.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 4. Tela de Pagamento
+- Tela onde é possível escolher a quantidade de parcelas para pagamento.
+- Interface amigável para selecionar opções de parcelamento.
 
-### `npm test`
+### 5. Tela com QR Code
+- Tela que exibe um QR code.
+- Pode ser usada para pagamentos, verificações ou autenticações via QR code.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 6. Formulário de Pagamento
+- Formulário completo para inserção de dados de pagamento.
+- Inclui campos essenciais para processamento de pagamentos de forma segura.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
