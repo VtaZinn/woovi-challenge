@@ -8,11 +8,12 @@ import Logo from './Logo';
 function ModalConfirmation(props){
   return(
     <>
-      <Box>
+      <Box >
       <Modal
         open={props.isOpen}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        sx={{maxWidth: '400px', margin: 'auto'}}
       >
         <Box sx={{width: '100%', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <Box sx={{width: '80%',height: 'auto' ,backgroundColor: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', paddingBottom: 3}}>
