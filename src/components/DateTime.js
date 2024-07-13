@@ -12,7 +12,7 @@ function DateTime() {
   
     return () => clearInterval(interval);
   }, []);
-  
+
   const formattedDate = dateTime.toLocaleDateString();
   const formattedTime = dateTime.toLocaleTimeString();
 
@@ -25,7 +25,6 @@ function DateTime() {
           <Typography sx={{marginLeft: 1}}>-</Typography>
           <Typography  sx={{fontWeight: 'bolder', color: '#4D4D4D', marginLeft: 1}}> {formattedTime}</Typography>
         </Box>
-       
       </Box>
     </>
   );

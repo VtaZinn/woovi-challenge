@@ -5,7 +5,6 @@ import ModalConfirmation from "./ModalConfirmation";
 
 function Form(props){
   const [valueSelect, setValueSelect] = useState('1x');
-
   const [open, setOpen] = useState(false);
 
   const handleChange = (evt) => {
@@ -17,40 +16,115 @@ function Form(props){
   }
 
 
+  const [formValues, setFormValues] = useState({
+    name: '',
+    email: '',
+  });
+
+  const [formErrors, setFormErrors] = useState({
+    name: '',
+    email: '',
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
+  };
+
+  const validate = () => {
+    let errors = {};
+    if (!formValues.name) {
+      errors.name = 'Digite seu nome';
+    }
+    if (!formValues.cpf) {
+      errors.cpf = 'Digite seu cpf';
+    }
+    if (!formValues.cardNumber) {
+      errors.cardNumber = 'Digite seu numero do cartão';
+    }
+    if (!formValues.dueDate) {
+      errors.dueDate = 'Preencha esse campo';
+    }
+    if (!formValues.cvv) {
+      errors.cvv = 'Preencha esse campo';
+    }
+    setFormErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validate()) {
+      setOpen(true);
+    }
+  };
+
   return(
-    <>
+    <Box  
+    onSubmit={handleSubmit} noValidate
+    component="form"
+    autoComplete="off">
+
     <TextField
-      required
-      id="outlined-required"
       label="Nome completo"
+      name="name"
+      value={formValues.name}
+      onChange={handleInputChange}
+      error={!!formErrors.name}
+      helperText={formErrors.name}
+      fullWidth
+      margin="normal"
       sx={{width:'100%',height: '65px', marginTop: 3}}
     />
 
     <TextField
-      required
-      id="outlined-required"
       label="CPF"
+      name="cpf"
+      value={formValues.cpf}
+      onChange={handleInputChange}
+      error={!!formErrors.cpf}
+      helperText={formErrors.cpf}
+      fullWidth
+      margin="normal"
       sx={{width:'100%',height: '65px', marginTop: 1}}
     />
 
     <TextField
-      required
-      id="outlined-required"
-      label="Número do cartão"
+      label="Numero do cartão"
+      name="cardNumber"
+      value={formValues.cardNumber}
+      onChange={handleInputChange}
+      error={!!formErrors.cardNumber}
+      helperText={formErrors.cardNumber}
+      fullWidth
+      margin="normal"
       sx={{width:'100%',height: '65px', marginTop: 1}}
     />
 
     <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
       <TextField
-        required
-        id="outlined-required"
         label="Vencimento"
+        name="dueDate"
+        value={formValues.dueDate}
+        onChange={handleInputChange}
+        error={!!formErrors.dueDate}
+        helperText={formErrors.dueDate}
+        fullWidth
+        margin="normal"
         sx={{width:'48%',height: '65px', marginTop: 1}}
       />
       <TextField
-        required
-        id="outlined-required"
         label="CVV"
+        name="cvv"
+        value={formValues.cvv}
+        onChange={handleInputChange}
+        error={!!formErrors.cvv}
+        helperText={formErrors.cvv}
+        fullWidth
+        margin="normal"
         sx={{width:'48%',height: '65px', marginTop: 1}}
       />
     </Box>
@@ -67,9 +141,9 @@ function Form(props){
         {data.map(item => <MenuItem key={item.id} value={item.instalments}>{item.instalments} de {item.price}</MenuItem>)}
       </Select>
     </Box>
-    <Button variant="contained" sx={{backgroundColor: '#133A6F', width: '100%', marginTop: 2}} onClick={handleClick}>Pagar</Button>
+    <Button type="submit" variant="contained" sx={{backgroundColor: '#133A6F', width: '100%', marginTop: 2}}>Pagar</Button>
     <ModalConfirmation isOpen={open} onClick={handleClick}/>
-    </>
+    </Box>
   );
 }
 
