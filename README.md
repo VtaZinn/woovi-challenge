@@ -1,5 +1,9 @@
 # Challenge Woovi
 
+# Link do site
+
+https://challenge-woovi.netlify.app/
+
 Este projeto foi desenvolvido em React.js e inclui várias funcionalidades, como cartões que ficam em destaque quando selecionados, um modal com um loading que redireciona para a próxima página, data e hora atualizadas em tempo real, uma tela de pagamento com opções de parcelamento, uma tela com QR code e um formulário de pagamento.
 
 ## Funcionalidades

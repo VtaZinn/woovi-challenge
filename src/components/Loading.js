@@ -11,7 +11,7 @@ function Loading(props){
     if(props.isOpen === true){
       const timer = setInterval(() => {
         setProgress((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 10));
-      }, 200);
+      }, 150);
       return () => {
         clearInterval(timer);
       };

@@ -1,10 +1,8 @@
-import QrCode from './components/QrCode.js';
-import Payment from './components/Payment.js';
-import Header from './components/Header.js';
+import QrCode from '../components/QrCode.js';
+import Payment from '../components/Payment.js';
+import Header from '../components/Header.js';
 import Box from '@mui/material/Box';
-import Footer from './components/Footer.js';
-
-
+import Footer from '../components/Footer.js';
 
 function PixPayment(){
   return(

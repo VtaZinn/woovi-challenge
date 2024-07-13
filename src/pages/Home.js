@@ -1,16 +1,16 @@
-import CardPrice from './components/CardPrice.js';
-import CardPriceInstalments from './components/CardPriceInstalments.js';
-import data from './data.js';
-import Header from './components/Header.js';
+import CardPrice from '../components/CardPrice.js';
+import CardPriceInstalments from '../components/CardPriceInstalments.js';
+import data from '../data.js';
+import Header from '../components/Header.js';
 import Box from '@mui/material/Box';
-import Footer from './components/Footer.js';
+import Footer from '../components/Footer.js';
 import { useState } from 'react';
 
 
 
 function Home(){
   const [status, setStatus] = useState('2');
-  console.log(status)
+
   return(
     <>
     <Box sx={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}>

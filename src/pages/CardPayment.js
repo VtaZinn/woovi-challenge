@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
-import Form from "./components/Form";
-import Header from "./components/Header";
-import Payment from "./components/Payment";
-import Footer from "./components/Footer";
+import Form from "../components/Form";
+import Header from "../components/Header";
+import Payment from "../components/Payment";
+import Footer from "../components/Footer";
 
 function CardPayment() {
   return(

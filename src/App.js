@@ -4,9 +4,9 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import '@fontsource/nunito';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Home.js';
-import PixPayment from './PixPayment.js';
-import CardPayment from './CardPayment.js';
+import Home from './pages/Home.js';
+import PixPayment from './pages/PixPayment.js';
+import CardPayment from './pages/CardPayment.js';
 
 function App() {
   return (

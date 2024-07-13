@@ -18,12 +18,12 @@ function Form(props){
 
   const [formValues, setFormValues] = useState({
     name: '',
-    email: '',
+    cpf: '',
   });
 
   const [formErrors, setFormErrors] = useState({
     name: '',
-    email: '',
+    cpf: '',
   });
 
   const handleInputChange = (e) => {
